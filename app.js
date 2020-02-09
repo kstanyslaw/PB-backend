@@ -10,7 +10,7 @@ const app = express();
 
 const mongoose = require('mongoose');
 //  CONNECT DB
-mongoose.connect('mongodb+srv://PB-backend:' + process.env.DB_PWD + '@cluster0-0qj9w.gcp.mongodb.net/test?retryWrites=true&w=majority', { useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology: true })
+mongoose.connect('mongodb+srv://' + process.env.DB_USER + ':' + process.env.DB_PWD + '@cluster0-0qj9w.gcp.mongodb.net/' + process.env.DB_NAME + '?retryWrites=true&w=majority', { useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology: true })
     .then(
         () => { console.log('\x1b[1m', 'Successfuly connected to DataBase:)\n', '\x1b[0m') }
     )

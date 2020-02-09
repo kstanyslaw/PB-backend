@@ -2,6 +2,8 @@
     "env": {
         "JWT_SECRET": "secret",
         "DB_PWD": "vx25X3fF2105Zo8e",
-        "DB_API_KEY": "d09aa98b-7bee-46f5-9fde-d1dbc91309c6"
+        "DB_USER": "PB-backend",
+        "DB_API_KEY": "d09aa98b-7bee-46f5-9fde-d1dbc91309c6",
+        "DB_NAME": "photoblog"
     }
 }
